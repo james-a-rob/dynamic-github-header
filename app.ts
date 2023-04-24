@@ -1,11 +1,13 @@
 import express from 'express';
 import templates from './templates';
+import nocache from 'nocache';
 
 const app = express();
 
+app.use(nocache());
+
 app.get("/image/:template", (req, res) => {
     const buffer = templates[req.params.template](req.query);
-    res.set('Cache-Control', 'no-store');
     res.set('Content-Type', 'image/jpeg');
     res.send(buffer);
 
