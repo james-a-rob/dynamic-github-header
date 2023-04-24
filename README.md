@@ -12,9 +12,9 @@ Images on the web are usually static. That means that every time you request tha
 ## Static vs Dynamic example
 
 
-| Static image example (Will not change when refreshing page) | Dynamic image example (Refresh the page to see this image change) |
-| ----------------------------------------------------------- | ----------------------------------------------------------------- |
-| ![Static image](hello-world.png?raw=true)                   | ![image](https://dynamic-image.onrender.com/image/simple-example) |
+| Static image example (Will not change when refreshing page) | Dynamic image example (Refresh the page to see this image change)      |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------- |
+| ![Static image](hello-world.png?raw=true)                   | ![image](https://dynamic-image.onrender.com/image/simple-example.jpeg) |
 
 
 ## Real example
