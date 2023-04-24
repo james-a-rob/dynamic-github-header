@@ -7,7 +7,7 @@ This is Beta phase software. Expect bugs.
 ## Why?
 There are many places on the web where you can add images but no dynamic content. For example this Github Repo README or a marketing email. So the more exicting we can make images the more engaging these sort of online spaces will be. 
 
-Images on the web are usually static. That means that every time you request that image you see the exact sampe result. Dynamic images are regenerated everytime they are request from the server. This allows the content of those images to change. A simple example would be updating some text in an image based on time of the day.
+Images on the web are usually static. That means that every time you request that image you see the exact same result. Dynamic images are regenerated everytime they are request from the server. This allows the content of those images to change. A simple example would be updating some text in an image based on time of the day.
 
 ## Static vs Dynamic example
 
