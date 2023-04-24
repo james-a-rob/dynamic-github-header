@@ -1,11 +1,15 @@
 import { createCanvas } from 'canvas';
-
-const example = (): Buffer => {
+export type Options = {
+    color?: string
+}
+const example = (options?: Options): Buffer => {
+    console.log(options)
     const canvas = createCanvas(400, 400);
     const context = canvas.getContext('2d');
+    const randomColor = ['#000', '#FFD700', '#DC143C', '#E9967A', '#FF69B4', '#191970'][Math.floor(Math.random() * 6)];
 
     // set the background color to black
-    context.fillStyle = '#000';
+    context.fillStyle = options?.color || randomColor;
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     // set the font size and color

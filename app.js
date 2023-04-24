@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const templates_1 = __importDefault(require("./templates"));
 const app = (0, express_1.default)();
 app.get("/image/:template", (req, res) => {
-    const buffer = templates_1.default[req.params.template]();
+    const buffer = templates_1.default[req.params.template](req.query);
     res.set('Content-Type', 'image/jpeg');
     res.send(buffer);
 });
