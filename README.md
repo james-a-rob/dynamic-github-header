@@ -1,3 +1,6 @@
+![Visitor Count](https://profile-counter.glitch.me/james-a-rob/count.svg)
+
+
 ## Warning
 This is Alpha software. Expect bugs.
 
