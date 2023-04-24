@@ -4,7 +4,7 @@ import app from '../app';
 describe("testing simple example", () => {
     test("works when passing correct template name", (done) => {
         request(app)
-            .get('/image/simple-example?color=black')
+            .get('/image/simple-example.jpeg?color=black')
             .expect('Content-Type', 'image/jpeg')
             .expect('Content-Length', '5312')
             .expect(200)
