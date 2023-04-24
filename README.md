@@ -2,7 +2,7 @@
 Easily create images that change each time they are requested.
 
 ## Warning!!!!
-This is Alpha software. Expect bugs.
+This is Beta phase software. Expect bugs.
 
 ## Why?
 There are many places on the web where you can add images but no dynamic content. For example this Github Repo README or a marketing email. So the more exicting we can make images the more engaging these sort of online spaces will be. 
@@ -17,11 +17,14 @@ Images on the web are usually static. That means that every time you request tha
 ![image](https://dynamic-image.onrender.com/image/simple-example)
 
 ## Real example
-This image below is an example of a dynamic image. Whenever it is requested the server gets my latest follower via the Github Graphql API and dynamically generates the image using the latest followers username and profile image. Finally the image is returned to the browser. If you were to follow me and then refresh this page you will see the image change.
+Dynamic images get really intresting when they pull in information from other systems. The image below is an example of a dynamic image that uses Github user data. Whenever the image is requested the server gets my latest follower via the Github Graphql API and dynamically generates the image using the latest followers username and profile image. Finally the image is returned to the browser. If you were to follow me and then refresh this page you will see the image change.
 
 ## Features 
+ - Make static webpages and markdown files more exciting.
+ - Lots of differnt image templates to easily copy and extend
+ - Writen with TypeScript
 
-## Video tutorial
+## Video walkthrough
 
 ## Setup
 
