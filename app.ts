@@ -6,8 +6,8 @@ const app = express();
 
 app.use(nocache());
 
-app.get("/image/:template.jpeg", (req, res) => {
-    const buffer = templates[req.params.template](req.query);
+app.get("/image/:template.jpeg", async (req, res) => {
+    const buffer = await templates[req.params.template](req.query);
     res.set('Content-Type', 'image/jpeg');
     res.send(buffer);
 
