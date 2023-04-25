@@ -8,7 +8,7 @@ This is Beta phase software. Expect bugs.
 Just add the following markdown to the README.md file.
 
 ## Real example
-The image below is an example of a dynamic image that uses Github user data. Whenever the image is requested the server gets my latest follower via the Github Graphql API and dynamically generates the image using the latest followers username and profile image. Finally the image is returned to the browser. If you were to follow me and then refresh this page you will see the image change.
+See it in action on my [Github Profile](https://github.com/james-a-rob)
 
 ## Features 
  - Make repo README and github prfiles more exciting.
