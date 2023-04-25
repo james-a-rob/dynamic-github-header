@@ -1,5 +1,5 @@
-## Dynamic Readme
-A setup of dynamic elements to make your Github README stand out.
+## Dynamic Header Image for Github Readmes
+Make your Github README stand out.
 
 ## Warning!!!!
 This is Beta phase software. Expect bugs.
@@ -17,8 +17,9 @@ Just add the following markdown to the README.md file.
 See it in action on my [Github Profile](https://github.com/james-a-rob)
 
 ## Features 
- - Make repo README and github prfiles more exciting.
- - Lots of differnt image templates to easily copy and extend
+ - Add to README in one line of markdown.
+ - Lots of ways to easily customize.
+ - Extent and add your own unique headers.
  - Writen with TypeScript
 
 ## Video walkthrough
