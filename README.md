@@ -7,11 +7,11 @@ This is Beta phase software. Expect bugs.
 ## Usage
 Just add the following markdown to the README.md file.
 ```
-![header image](https://dynamic-image.onrender.com/image/latest-follower.jpeg?background=Arcadia&textColor=white&userName=microsoft)
+![header image](https://dynamic-image.onrender.com/image/latest-follower.jpeg?background=aqua&textColor=white&userName=gaearon)
 ```
 
 ## Demo
-![header image](https://dynamic-image.onrender.com/image/latest-follower.jpeg?background=Arcadia&textColor=white&userName=microsoft)
+![header image](https://dynamic-image.onrender.com/image/latest-follower.jpeg?background=aqua&textColor=white&userName=gaearon)
 
 ## Real example
 See it in action on my [Github Profile](https://github.com/james-a-rob)

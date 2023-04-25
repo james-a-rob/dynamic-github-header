@@ -14,7 +14,7 @@ const height = 500;
 const profileImageWidth = 120;
 const profileImageHeight = 120;
 
-const getLatestFollower = async (userName: string) => {
+const getUser = async (userName: string) => {
     // replace with token from env var
     const graphqlWithAuth = graphql.defaults({
         headers: {
@@ -24,6 +24,7 @@ const getLatestFollower = async (userName: string) => {
     const response: GraphQlQueryResponseData = await graphqlWithAuth(`
         {
             user(login:"${userName}"){
+                name
                 followers(first:1){
                 nodes{
                     name
@@ -35,12 +36,12 @@ const getLatestFollower = async (userName: string) => {
       `);
 
     return {
-        name: response.user.followers.nodes[0].name,
-        image: response.user.followers.nodes[0].avatarUrl,
+        name: response.user.name,
+        latestFollowerName: response.user.followers.nodes[0].name,
+        latestFollowerImage: response.user.followers.nodes[0].avatarUrl,
     }
 }
 
-getLatestFollower("james-a-rob");
 
 const latestFollower = async (options?: Options): Promise<Buffer> => {
     if (!options?.userName) {
@@ -50,14 +51,14 @@ const latestFollower = async (options?: Options): Promise<Buffer> => {
         return buffer;
     }
     registerFont('fonts/Anton/Anton-Regular.ttf', { family: 'Anton Regular' })
-    const latestFollower = await getLatestFollower(options?.userName);
+    const user = await getUser(options?.userName);
     const canvas = createCanvas(width, height);
     const ctx = canvas.getContext('2d');
 
     const partyImage = await loadImage('images/party.png');
     const partyImageFlipped = await loadImage('images/party-flipped.png');
 
-    const image1 = await loadImage(latestFollower.image);
+    const image1 = await loadImage(user.latestFollowerImage);
 
     ctx.fillStyle = options?.background || "#8460d7";
 
@@ -68,10 +69,10 @@ const latestFollower = async (options?: Options): Promise<Buffer> => {
     ctx.textAlign = 'center';
 
     ctx.font = 'light 80px "Anton Regular"';
-    ctx.fillText("Hi I'm James", width / 2, 160);
+    ctx.fillText(`Hi I'm ${user.name}`, width / 2, 160);
 
     ctx.font = 'thin 40px "Anton Regular"';
-    ctx.fillText(`Thanks to my latest follower ${latestFollower.name}`, width / 2, 240);
+    ctx.fillText(`Thanks to my latest follower ${user.latestFollowerName}`, width / 2, 240);
 
     ctx.font = '25px "Anton Regular"';
     ctx.fillStyle = "#d1eeff";
