@@ -36,6 +36,7 @@ const latestFollower = (options) => __awaiter(void 0, void 0, void 0, function* 
     ctx.beginPath();
     ctx.arc((width / 2), 350, 60, 0, 2 * Math.PI);
     ctx.clip();
+    ctx.drawImage(image1, (width / 2) - (profileImageWidth / 2), 290, 120, 120);
     console.log(image1);
     const buffer = canvas.toBuffer('image/jpeg');
     return buffer;
