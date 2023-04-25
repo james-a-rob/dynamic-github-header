@@ -6,6 +6,12 @@ This is Beta phase software. Expect bugs.
 
 ## Usage
 Just add the following markdown to the README.md file.
+```
+![header image](https://dynamic-image.onrender.com/image/latest-follower.jpeg?background=Arcadia&textColor=white&userName=microsoft)
+```
+
+## Demo
+![header image](https://dynamic-image.onrender.com/image/latest-follower.jpeg?background=Arcadia&textColor=white&userName=microsoft)
 
 ## Real example
 See it in action on my [Github Profile](https://github.com/james-a-rob)
